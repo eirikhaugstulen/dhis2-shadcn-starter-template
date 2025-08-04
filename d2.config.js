@@ -3,7 +3,7 @@ const config = {
     type: 'app',
 
     entryPoints: {
-        app: './src/App.tsx',
+        app: './src/app.tsx',
     },
 
     direction: 'auto',

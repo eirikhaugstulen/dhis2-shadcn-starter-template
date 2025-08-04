@@ -22,9 +22,8 @@
     /* Path mapping to match Vite config */
     "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*"]
+      "@/*": ["./src/*"]
     }
   },
-  "include": ["src"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "include": ["src"]
 }
