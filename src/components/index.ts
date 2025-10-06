@@ -1,2 +1,4 @@
 export { UserProfile } from './user-profile'
 export { CountryCarousel } from './country-carousel'
+export { SyncUrlWithGlobalShell } from './sync-url-with-global-shell'
+export { AboutPage } from './pages/about-page'
