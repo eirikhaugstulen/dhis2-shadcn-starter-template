@@ -1,0 +1,1 @@
+export { devMeetupOctoberSlides } from './dev-meetup-october';

@@ -42,7 +42,7 @@ export function AppSidebar() {
                     </div>
                     <div className='flex flex-col gap-0.5'>
                         <span className='font-semibold'>DHIS2 App</span>
-                        <span className='text-xs text-muted-foreground'>Starter Template</span>
+                        <span className='text-xs text-muted-foreground'>Developers Meetup</span>
                     </div>
                 </div>
             </SidebarHeader>

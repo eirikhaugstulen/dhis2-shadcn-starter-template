@@ -1,7 +1,11 @@
 import { SlideDeck } from '@/components/presentation'
-import { devMeetupOctoberSlides } from '@/components/presentation/slides'
+import { devMeetupOctoberSlides } from '@/components/presentation/presentations'
 
 export const PresentationPage = () => {
-    return <SlideDeck slides={devMeetupOctoberSlides} />
+    return (
+        <div className="bg-gray-800">
+            <SlideDeck slides={devMeetupOctoberSlides} />
+        </div>
+    )
 }
 

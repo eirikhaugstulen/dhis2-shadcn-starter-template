@@ -5,8 +5,9 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { useNavigate, useLocation } from "react-router-dom";
 
-interface Slide {
+export type Slide = {
     id: string;
+    displayName?: string;
     notes?: string;
     content: React.ReactNode;
 }
@@ -210,11 +211,7 @@ export const SlideDeck = ({ slides, autoAdvanceMs = (0.2 * 60 * 1000) }: DeckPro
                     <div className="w-full h-full p-4 text-left">
                         <div className="text-xs opacity-60 mb-2">{i + 1}</div>
                         <div className="text-sm line-clamp-3">
-                            {/* Try to infer a heading from slide content */}
-                            {React.isValidElement(s.content) &&
-                                typeof (s.content as React.ReactElement<{ children?: unknown }>).props.children === "string"
-                                ? ((s.content as React.ReactElement<{ children: string }>).props.children).slice(0, 80)
-                                : s.id || "Slide"}
+                            {s.displayName || s.id}
                         </div>
                     </div>
                 </button>
@@ -303,9 +300,9 @@ export const SlideDeck = ({ slides, autoAdvanceMs = (0.2 * 60 * 1000) }: DeckPro
  *
  * export default function TalkPage() {
  *   const slides = [
- *     { id: 'intro', content: (<div>Hi 👋</div>), notes: 'Smile.' },
+ *     { id: 'intro', displayName: 'Introduction', content: (<div>Hi 👋</div>), notes: 'Smile.' },
  *     { id: 'demo', content: (<YourLiveDemo />) },
- *     { id: 'qna', content: (<h2>Q&A</h2>) },
+ *     { id: 'qna', displayName: 'Questions & Answers', content: (<h2>Q&A</h2>) },
  *   ];
  *   return <Deck slides={slides} autoAdvanceMs={0} />
  * }
