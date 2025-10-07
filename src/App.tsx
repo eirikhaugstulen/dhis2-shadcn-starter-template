@@ -1,6 +1,6 @@
 // './locales' will be populated after running start or build scripts
 import './locales'
-import { UserProfile, AboutPage, SyncUrlWithGlobalShell } from '@/components'
+import { UserProfile, AboutPage, PresentationPage, SyncUrlWithGlobalShell } from '@/components'
 import '@/globals.css'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
@@ -59,6 +59,10 @@ const router = createHashRouter([
             {
                 path: 'about',
                 element: <AboutPage />,
+            },
+            {
+                path: 'presentation',
+                element: <PresentationPage />,
             },
         ],
     },
