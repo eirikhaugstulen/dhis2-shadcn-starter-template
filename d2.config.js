@@ -7,7 +7,7 @@ const config = {
     },
 
     direction: 'auto',
-    viteConfigExtensions: './viteConfigExtensions.mjs',
+    viteConfigExtensions: './vite.config.mts',
 }
 
 module.exports = config

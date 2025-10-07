@@ -12,6 +12,7 @@ export const UserProfile = () => {
     }
 
     if (error || !data) {
+        console.error(error)
         return <div>Error: {error?.message || i18n.t('An unknown error occurred')}</div>
     }
 
