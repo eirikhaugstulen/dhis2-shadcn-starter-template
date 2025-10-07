@@ -3,7 +3,7 @@ import { devMeetupOctoberSlides } from '@/components/presentation/presentations'
 
 export const PresentationPage = () => {
     return (
-        <div className="bg-gray-800">
+        <div>
             <SlideDeck slides={devMeetupOctoberSlides} />
         </div>
     )

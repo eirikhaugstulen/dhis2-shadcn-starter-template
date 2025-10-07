@@ -73,9 +73,9 @@ export const titleSlide: Slide = {
                         words={[
                             "Welcome 👋",
                             "Bienvenue 👋",
+                            "Karibu 👋",
                             "Bienvenido 👋",
-                            "환영합니다 👋",
-                            "مرحبا 👋",
+                            "أهلاً وسهلاً 👋",
                             "Velkommen 👋",
                         ]}
                         typeSpeed={80}
@@ -83,7 +83,7 @@ export const titleSlide: Slide = {
                         pauseDelay={1500}
                         loop
                         className="text-2xl font-medium text-muted-foreground"
-                        cursorStyle="line"
+                        cursorStyle="underscore"
                         blinkCursor={true}
                     />
                 </motion.div>
