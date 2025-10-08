@@ -30,9 +30,9 @@ const itemVariants: Variants = {
     },
 };
 
-export const bestToolsSlide: Slide = {
-    id: "best-tools",
-    displayName: "Use the Best Tools",
+export const chatDemoSlide: Slide = {
+    id: "chat-demo",
+    displayName: "Chat Demo",
     notes: "Emphasize how context and tooling matter more than the model itself.",
     content: (
         <div className="h-full relative overflow-hidden rounded-lg">
