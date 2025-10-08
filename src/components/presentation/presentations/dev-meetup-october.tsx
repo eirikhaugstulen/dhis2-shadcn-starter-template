@@ -1,9 +1,10 @@
-import { titleSlide, aboutSlide, thanksSlide, disclaimerSlide, contextWindowSlide, examplesSlide, taskBreakdownSlide, bestToolsSlide } from "../slides";
+import { titleSlide, aboutSlide, thanksSlide, disclaimerSlide, stateOfGenerativeAISlide, contextWindowSlide, examplesSlide, taskBreakdownSlide, bestToolsSlide } from "../slides";
 
 export const devMeetupOctoberSlides = [
     titleSlide,
     aboutSlide,
     disclaimerSlide,
+    stateOfGenerativeAISlide,
     contextWindowSlide,
     examplesSlide,
     taskBreakdownSlide,

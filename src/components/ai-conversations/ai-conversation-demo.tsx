@@ -7,8 +7,6 @@ import {
 import { Button } from "@/components/ui/button";
 import {
     Play,
-    Search,
-    FileText,
     CheckCircle2,
     MessageSquare,
     Bot,

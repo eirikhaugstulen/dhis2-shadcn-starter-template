@@ -24,7 +24,7 @@ interface DeckProps {
  * - Overview grid (press G or click grid icon)
  * - Fullscreen mode (press F or click fullscreen icon)
  * - Light/Dark theme toggle
- * - Notes mode (press N) — shows speaker notes overlay (hidden by default)
+ * - Notes mode (press N) - shows speaker notes overlay (hidden by default)
  * - Print to PDF with Cmd/Ctrl+P (print styles included)
  * - Responsive, touch-friendly
  *
@@ -281,10 +281,10 @@ export const SlideDeck = ({ slides, autoAdvanceMs = (0.2 * 60 * 1000) }: DeckPro
 
                     {/* Speaker notes overlay */}
                     {showNotes && !grid && (
-                        <div className="fixed inset-0 bg-black/70 text-white p-6 print:hidden">
+                        <div className="fixed z-50 inset-0 bg-black/70 text-white p-6 print:hidden">
                             <div className="max-w-4xl mx-auto">
                                 <h4 className="text-xl font-semibold mb-2">Notes</h4>
-                                <p className="opacity-90 whitespace-pre-wrap">{slides[index]?.notes || "—"}</p>
+                                <p className="opacity-90 whitespace-pre-wrap">{slides[index]?.notes || "-"}</p>
                             </div>
                         </div>
                     )}

@@ -6,10 +6,10 @@ import { ArrowLeft, ArrowRight, ChevronLeft, ChevronRight, Folder, FolderPlus, R
 const steps = [
     { title: "" },
     { title: "Step 0 - Empty workspace" },
-    { title: "Step 1 — Page shell" },
-    { title: "Step 2 — Top-left widget" },
-    { title: "Step 3 — Bottom-left widget" },
-    { title: "Step 4 — Right column: three remaining cards" },
+    { title: "Step 1 - Page shell" },
+    { title: "Step 2 - Top-left widget" },
+    { title: "Step 3 - Bottom-left widget" },
+    { title: "Step 4 - Right column: three remaining cards" },
 ];
 
 const fadeUp = {

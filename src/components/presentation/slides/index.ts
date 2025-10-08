@@ -2,6 +2,7 @@ export { titleSlide } from './title-slide';
 export { thanksSlide } from './thanks-slide';
 export { aboutSlide } from './about-slide';
 export { disclaimerSlide } from './disclaimer-slide';
+export { stateOfGenerativeAISlide } from './state-of-generative-ai-slide';
 export { contextWindowSlide } from './context-window-slide';
 export { examplesSlide } from './examples-slide';
 export { taskBreakdownSlide } from './task-breakdown-slide';
