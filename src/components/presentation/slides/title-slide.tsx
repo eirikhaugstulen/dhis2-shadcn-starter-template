@@ -99,7 +99,7 @@ export const titleSlide: Slide = {
                         </AnimatedShinyText>
                     </h1>
                     <h2 className="text-5xl font-bold tracking-tight bg-gradient-to-br from-foreground via-foreground/90 to-foreground/70 bg-clip-text text-transparent">
-                        DHIS2 Development
+                        Development
                     </h2>
                 </motion.div>
 
@@ -109,7 +109,7 @@ export const titleSlide: Slide = {
                     variants={badgeVariants}
                 >
                     <Badge variant="default" className="px-4 py-1.5 text-sm font-medium">
-                        Developers Meetup
+                        Developer Meetup
                     </Badge>
                 </motion.div>
 
