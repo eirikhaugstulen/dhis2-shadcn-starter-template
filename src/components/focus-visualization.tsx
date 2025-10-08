@@ -15,7 +15,6 @@ export function FocusVisualization() {
               </div>
               <div className="text-lg font-semibold text-foreground">AI as Developer Tool</div>
             </div>
-            <div className="text-muted-foreground text-xs">Enhancing workflow & productivity</div>
           </div>
         </div>
       </div>
@@ -37,7 +36,6 @@ export function FocusVisualization() {
                   </div>
                   <div className="text-lg font-semibold text-muted-foreground">AI in Product</div>
                 </div>
-                <div className="text-muted-foreground text-xs">Chatbots & agents for users</div>
               </div>
             </div>
           </div>
