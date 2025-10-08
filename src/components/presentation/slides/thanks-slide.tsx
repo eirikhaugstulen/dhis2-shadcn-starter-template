@@ -5,7 +5,6 @@ import { AnimatedShinyText } from "@/components/ui/animated-shiny-text";
 import { Badge } from "@/components/ui/badge";
 import { motion, type Variants } from "framer-motion";
 import { GlobeIcon, MailIcon } from "lucide-react";
-import { LinkedIn } from "../assets/linkedIn";
 
 const containerVariants: Variants = {
     hidden: { opacity: 0 },
