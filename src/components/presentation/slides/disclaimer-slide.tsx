@@ -53,11 +53,11 @@ export const disclaimerSlide: Slide = {
                     >
                         <motion.li className="flex items-center gap-4" variants={itemVariants}>
                             <span className="size-2 rounded-full bg-primary/50" />
-                            <span>We're in a bubble.</span>
+                            <span>These are my personal opinions.</span>
                         </motion.li>
                         <motion.li className="flex items-center gap-4" variants={itemVariants}>
                             <span className="size-2 rounded-full bg-primary/50" />
-                            <span>These are my personal opinions.</span>
+                            <span>We're in a bubble.</span>
                         </motion.li>
                         <motion.li className="flex items-center gap-4" variants={itemVariants}>
                             <span className="size-2 rounded-full bg-primary/50" />

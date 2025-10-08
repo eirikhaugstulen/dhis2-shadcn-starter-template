@@ -2,7 +2,7 @@ import type { Slide } from "../presentation";
 import { LightRays } from "@/components/ui/light-rays";
 import { StripedPattern } from "@/components/magicui/striped-pattern";
 import { motion, type Variants } from "framer-motion";
-import { ContextAfter } from "../assets/context-after";
+import { badContextConversation, goodContextConversation, ChatDemo } from "@/components/ai-conversations";
 
 const containerVariants: Variants = {
     hidden: { opacity: 0, y: 16 },
@@ -30,49 +30,61 @@ const itemVariants: Variants = {
     },
 };
 
-export const contextWindowSlide: Slide = {
-    id: "context-window",
-    displayName: "Context Window",
-    notes: "Explain what an LLM's context window is and its importance.",
+export const bestToolsSlide: Slide = {
+    id: "best-tools",
+    displayName: "Use the Best Tools",
+    notes: "Emphasize how context and tooling matter more than the model itself.",
     content: (
         <div className="h-full relative overflow-hidden rounded-lg">
             <motion.div
-                className="h-full grid items-center justify-center gap-12 p-6 md:px-32 md:grid-cols-[2fr_3fr]"
+                className="h-full flex flex-col gap-4 p-6 md:px-12 md:py-10"
                 variants={containerVariants}
                 initial="hidden"
                 animate="visible"
             >
-                <motion.div variants={itemVariants} className="flex justify-center md:justify-start z-20">
-                    <div className="relative w-full h-96 rounded-3xl bg-muted/50 border border-border/60 shadow-xl">
-                        <ContextAfter />
-                    </div>
-                </motion.div>
-
-                <motion.div className="space-y-10 text-left z-20 h-full flex flex-col items-center justify-center pr-10" variants={itemVariants}>
+                <motion.div
+                    className="z-20 w-full max-w-3xl mx-auto text-center md:text-left"
+                    variants={itemVariants}
+                >
+                    <motion.p
+                        className="text-sm font-semibold uppercase tracking-[0.3em] text-muted-foreground mb-4"
+                        variants={itemVariants}
+                    >
+                        Tip #3
+                    </motion.p>
                     <motion.h2
-                        className="text-5xl font-bold tracking-tight"
+                        className="text-4xl font-bold"
                         variants={itemVariants}
                     >
-                        Context
+                        If it walks like a duck...
                     </motion.h2>
-
                     <motion.ul
-                        className="space-y-6 text-xl leading-relaxed text-foreground/90"
+                        className="mt-4 space-y-2 text-lg leading-relaxed text-foreground"
                         variants={itemVariants}
                     >
                         <motion.li className="flex items-center gap-3" variants={itemVariants}>
                             <span className="size-2 rounded-full bg-primary/50" />
-                            <span>The AI's lens to the world</span>
-                        </motion.li>
-                        <motion.li className="flex items-center gap-3" variants={itemVariants}>
-                            <span className="size-2 rounded-full bg-primary/50" />
-                            <span>System prompt, conversation history, tool calls, etc.</span>
-                        </motion.li>
-                        <motion.li className="flex items-center gap-3" variants={itemVariants}>
-                            <span className="size-2 rounded-full bg-primary/50" />
-                            <span>Measured in tokens, ranging from 8K to 1M+</span>
+                            <span>Context matters more than the model itself</span>
                         </motion.li>
                     </motion.ul>
+                </motion.div>
+
+                <motion.div
+                    className="flex-1 z-10 flex gap-2"
+                    variants={itemVariants}
+                >
+                    <div className="w-1/2 max-h-[600px]">
+                        <ChatDemo
+                            className="h-full"
+                            conversation={badContextConversation}
+                        />
+                    </div>
+                    <div className="w-1/2 max-h-[600px]">
+                        <ChatDemo
+                            className="h-full"
+                            conversation={goodContextConversation}
+                        />
+                    </div>
                 </motion.div>
             </motion.div>
 

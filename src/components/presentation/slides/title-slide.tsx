@@ -74,7 +74,7 @@ export const titleSlide: Slide = {
                             "Welcome 👋",
                             "Bienvenue 👋",
                             "Karibu 👋",
-                            "Bienvenido 👋",
+                            "Bienvenidos 👋",
                             "أهلاً وسهلاً 👋",
                             "Velkommen 👋",
                         ]}

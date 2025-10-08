@@ -5,4 +5,5 @@ export { disclaimerSlide } from './disclaimer-slide';
 export { contextWindowSlide } from './context-window-slide';
 export { examplesSlide } from './examples-slide';
 export { taskBreakdownSlide } from './task-breakdown-slide';
+export { bestToolsSlide } from './best-tools-slide';
 

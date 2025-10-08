@@ -1,4 +1,4 @@
-import { titleSlide, aboutSlide, thanksSlide, disclaimerSlide, contextWindowSlide, examplesSlide, taskBreakdownSlide } from "../slides";
+import { titleSlide, aboutSlide, thanksSlide, disclaimerSlide, contextWindowSlide, examplesSlide, taskBreakdownSlide, bestToolsSlide } from "../slides";
 
 export const devMeetupOctoberSlides = [
     titleSlide,
@@ -7,6 +7,7 @@ export const devMeetupOctoberSlides = [
     contextWindowSlide,
     examplesSlide,
     taskBreakdownSlide,
+    bestToolsSlide,
     thanksSlide,
 ];
 
