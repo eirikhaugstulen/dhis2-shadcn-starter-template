@@ -5,6 +5,7 @@ import { AnimatedShinyText } from "@/components/ui/animated-shiny-text";
 import { Badge } from "@/components/ui/badge";
 import { motion, type Variants } from "framer-motion";
 import { GlobeIcon, MailIcon } from "lucide-react";
+import { LinkedIn } from "../assets/linkedIn";
 
 const containerVariants: Variants = {
     hidden: { opacity: 0 },
@@ -93,7 +94,7 @@ export const thanksSlide: Slide = {
                     <div className="flex flex-wrap gap-3 justify-center">
                         <Badge variant="default" className="px-4 py-2 text-base font-medium">
                             <div className="flex items-center gap-2">
-                                <MailIcon className="size-4" />
+                                <MailIcon className="size-4 text-gray-600" />
                                 <span>
                                     eirik@dhis2.org
                                 </span>
@@ -101,9 +102,9 @@ export const thanksSlide: Slide = {
                         </Badge>
                         <Badge variant="default" className="px-4 py-2 text-base font-medium">
                             <div className="flex items-center gap-2">
-                                <GlobeIcon className="size-4" />
+                                <GlobeIcon className="size-4 text-gray-600" />
                                 <span>
-                                    https://dhis2.org
+                                    @eirikhaugstulen
                                 </span>
                             </div>
                         </Badge>
@@ -116,7 +117,7 @@ export const thanksSlide: Slide = {
                     variants={itemVariants}
                 >
                     <p className="text-lg text-muted-foreground/70">
-                        Reach out if there are any questions or feedback!
+                        Reach out if I can help you with anything!
                     </p>
                 </motion.div>
             </motion.div>
