@@ -237,14 +237,13 @@ export const SlideDeck = ({ slides, autoAdvanceMs = (0.2 * 60 * 1000) }: DeckPro
                             {!grid ? (
                                 <motion.div
                                     key={slides[index]?.id || index}
-                                    className="p-8 md:p-12"
+                                    className=""
                                     custom={direction}
                                     initial="enter"
                                     animate="center"
                                     exit="exit"
                                     transition={{ type: "spring", stiffness: 200, damping: 30, mass: 0.6 }}
                                     variants={variants}
-                                    onClick={next}
                                 >
                                     {slides[index]?.content}
                                 </motion.div>
