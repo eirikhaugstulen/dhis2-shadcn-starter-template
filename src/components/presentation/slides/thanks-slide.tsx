@@ -109,16 +109,6 @@ export const thanksSlide: Slide = {
                         </Badge>
                     </div>
                 </motion.div>
-
-                {/* Additional message */}
-                <motion.div
-                    className="pt-4"
-                    variants={itemVariants}
-                >
-                    <p className="text-lg text-muted-foreground/70">
-                        Reach out if I can help you with anything!
-                    </p>
-                </motion.div>
             </motion.div>
 
             {/* Background effects */}
