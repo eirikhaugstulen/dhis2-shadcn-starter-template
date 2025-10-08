@@ -2,8 +2,7 @@ import type { Slide } from "../presentation";
 import { LightRays } from "@/components/ui/light-rays";
 import { StripedPattern } from "@/components/magicui/striped-pattern";
 import { motion, type Variants } from "framer-motion";
-import { ModelBefore } from "../assets/model-before";
-import { ModelAfter } from "../assets/model-after";
+import { ContextAfter } from "../assets/context-after";
 
 const containerVariants: Variants = {
     hidden: { opacity: 0, y: 16 },
@@ -45,7 +44,7 @@ export const contextWindowSlide: Slide = {
             >
                 <motion.div variants={itemVariants} className="flex justify-center md:justify-start z-20">
                     <div className="relative w-full h-96 rounded-3xl bg-muted/50 border border-border/60 shadow-xl">
-                        <ModelAfter />
+                        <ContextAfter />
                     </div>
                 </motion.div>
 
