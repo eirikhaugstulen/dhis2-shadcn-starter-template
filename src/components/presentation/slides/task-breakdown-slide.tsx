@@ -37,7 +37,7 @@ export const taskBreakdownSlide: Slide = {
     content: (
         <div className="h-full relative overflow-hidden rounded-lg">
             <motion.div
-                className="h-full flex flex-col gap-4 p-6 md:px-12 md:py-6"
+                className="h-full flex flex-col gap-4 p-6 md:px-12 md:py-10"
                 variants={containerVariants}
                 initial="hidden"
                 animate="visible"
