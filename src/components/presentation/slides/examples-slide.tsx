@@ -42,9 +42,15 @@ export const examplesSlide: Slide = {
                 initial="hidden"
                 animate="visible"
             >
-                <motion.div className="space-y-10 text-left h-full flex flex-col justify-center" variants={itemVariants}>
+                <motion.div className="text-left h-full flex flex-col justify-center" variants={itemVariants}>
+                    <motion.p
+                        className="text-sm font-semibold uppercase tracking-[0.3em] text-muted-foreground mb-4"
+                        variants={itemVariants}
+                    >
+                        Tip #1
+                    </motion.p>
                     <motion.h2
-                        className="text-5xl font-bold"
+                        className="text-5xl font-bold mb-10"
                         variants={itemVariants}
                     >
                         Show, don't tell
