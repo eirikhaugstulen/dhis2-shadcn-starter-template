@@ -33,7 +33,11 @@ const itemVariants: Variants = {
 export const disclaimerSlide: Slide = {
     id: "disclaimer",
     displayName: "Disclaimer",
-    notes: "Set expectations that opinions are personal.",
+    notes: `
+Before diving into the world of AI, I wanted to start with a few disclaimers. First off, everything I’m sharing here is based on my own experiences and opinions - this field is still so new that there’s no official rulebook. What works for one person or team might not work for another, and that’s okay. I’m not here to sell you anything - just to walk you through the ups and downs I’ve encountered, and hopefully help you avoid some common pitfalls. There’s still a lot of uncertainty around where AI is headed, and anyone who claims to know for sure is probably overconfident. We might be in the middle of a bubble, or we might just be scratching the surface - nobody really knows.
+
+The focus of this talk is really on how developers like us can practically use AI to enhance our workflows and development processes. It’s meant to be hands-on and grounded in real experience, not hype. That said, we’re also considering doing a separate session that goes into how to actually integrate generative AI into your own products. That would be a more product-focused follow-up, likely at a future meetup. So for now, let’s stay grounded, be curious, and explore how we can actually use these tools effectively in our day-to-day work.
+    `,
     content: (
         <div className="h-full relative overflow-hidden rounded-lg">
             <motion.div

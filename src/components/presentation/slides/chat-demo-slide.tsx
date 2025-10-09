@@ -33,7 +33,11 @@ const itemVariants: Variants = {
 export const chatDemoSlide: Slide = {
     id: "chat-demo",
     displayName: "Chat Demo",
-    notes: "Emphasize how context and tooling matter more than the model itself.",
+    notes: `
+Tip number three is: *if it walks like a duck, talks like a duck…* well, you know the rest. But with language models, it’s not that simple. Two tools might look identical - same model, same question, same interface - but under the hood, they can behave *very* differently. Why? Because context handling matters more than the model itself. I demonstrated this with a side-by-side comparison: both instances used Claude 4.5 Sonnet and were asked the exact same question - “How does navigation work in this app?” One gave a decent, surface-level answer. The other went way deeper.
+
+The difference came down to how the tools packaged context. One tool just read a couple of files. The other started by reading project memories, traced deeper through the layout files, picked up on DHIS2-specific logic, and even referenced custom syncing code used in our shell. Same model, same question - but wildly different results because one tool had access to a richer, more relevant context. That’s why I’m not just recommending powerful models - I’m recommending tools that *know how* to talk to them properly. Context isn’t just part of the solution - it *is* the solution.
+    `,
     content: (
         <div className="h-full relative overflow-hidden rounded-lg">
             <motion.div

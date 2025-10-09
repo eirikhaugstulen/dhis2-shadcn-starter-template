@@ -33,7 +33,11 @@ const itemVariants: Variants = {
 export const aboutSlide: Slide = {
     id: "about",
     displayName: "About Me",
-    notes: "Introduce yourself and highlight current roles.",
+    notes: `
+Before diving into the AI part of the talk, I thought I’d give a quick intro for those of you who don’t know me. I’m Eirik, a core developer at the University of Oslo, and I’ve been working on DHIS2 for nearly six years now. Most of you probably know me from the Tracker team, where I started out and spent about five years building the new Capture app - the one that’s now replacing the old Tracker Capture app.
+
+Over the past year, I’ve shifted more into the Climate team, where we’re doing some pretty exciting work connecting health data with local or global weather data. We're using time series models to predict things like malaria outbreaks based on temperature and rainfall. Outside of that, I’m a big AI enthusiast - I’ve spent the last couple of years experimenting with how to bring AI into both the products I build and the way I work as a developer.
+    `,
     content: (
         <div className="h-full relative overflow-hidden rounded-lg">
             <motion.div
@@ -64,7 +68,7 @@ export const aboutSlide: Slide = {
                         </motion.li>
                         <motion.li className="flex items-center gap-3" variants={itemVariants}>
                             <span className="size-2 rounded-full bg-primary/50" />
-                            <span>Head of R&amp;D @ Devotta</span>
+                            <span>AI enthusiast</span>
                         </motion.li>
                     </motion.ul>
                 </motion.div>

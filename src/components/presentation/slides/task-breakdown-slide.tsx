@@ -33,7 +33,11 @@ const itemVariants: Variants = {
 export const taskBreakdownSlide: Slide = {
     id: "task-breakdown",
     displayName: "Break It Down",
-    notes: "Highlight how decomposing features improves focus and delivery.",
+    notes: `
+The second big tip is *don’t overdo it*. A common mistake I see is assuming that language models are these endless, tireless machines that can just spit out massive amounts of perfect code in one go. But in practice, the longer the output you expect, the worse the quality tends to be. LLMs actually respond much better when you follow the same best practices we already use in software development - breaking tasks down, working in smaller units, doing code reviews, and building incrementally.
+
+So instead of asking the model to generate an entire complex dashboard at once, I start small. I might begin with just the page shell: the routing, layout, maybe a button or two. Then I move on to one component at a time - say, the top-left widget - making sure it’s styled and functional to a production-ready standard. Once that’s done, I move to the next widget, using the previous one as a reference. Only after I’ve laid that foundation do I ask the model to generate multiple smaller components at once, using the established patterns. Basically, treat the AI like a junior teammate: guide it step-by-step until it can run with the task.
+    `,
     content: (
         <div className="h-full relative overflow-hidden rounded-lg">
             <motion.div

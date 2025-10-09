@@ -44,7 +44,13 @@ const titleVariants: Variants = {
 export const thanksSlide: Slide = {
     id: "thanks",
     displayName: "Thank You",
-    notes: "Close with a call-to-action.",
+    notes: `
+As a last point, I really want to thank you for either listening in on the webinar or reading the speaker notes. I really do try to make the experience and learnings worth it for people that take time out of their day to listen to me.
+
+Have any questions or feedback, feel free to reach out to me anytime. Also, if there are concepts or things that you would want me to dig deeper on in the future, it would be a huge help for me to refine my future talks.
+
+Hope to hear from you!
+    `,
     content: (
         <div className="h-full grid place-items-center relative text-center overflow-hidden rounded-lg">
             <motion.div

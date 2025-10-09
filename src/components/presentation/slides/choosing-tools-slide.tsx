@@ -8,15 +8,16 @@ import devinLogo from "../assets/devin-logo.png";
 export const choosingToolsSlide: Slide = {
     id: "choosing-tools",
     displayName: "Choosing the Best Tools",
-    notes: "Frame Cursor & Windsurf as IDE partners and Claude & OpenAI as TUI partners. Encourage audience to mix based on workflow.",
+    notes: `
+I’m not trying to sell you anything here, but I do want to make a point: *frontier models deserve frontier tools.* A lot of the tools shown here are paid - though many have generous free tiers - but the reality is, high-quality AI still costs money. That said, most of these tools are currently delivering way more value than they cost, thanks to VC backing. And in my experience, just switching to one of these tools that knows how to package context properly can level up your entire workflow without needing you to change much else.
+
+Personally, I’ve been using Cursor quite a lot - it’s a full IDE built with AI in mind. Windsurf is a similar competitor. Then you’ve got terminal-first options like Claude Code and OpenAI’s Codex, which are both super capable. And finally, for background automation, there’s Devin. We’ve used Devin to rewrite major DHIS2 apps like the Modeling app and the Capture app - massive rewrites, done in weeks instead of months. These tools don’t just give you a better chat box - they deeply understand your project and stay with it. That’s what makes the difference.
+    `,
     content: (
         <div className="h-full w-full bg-gradient-to-br from-background via-background to-muted/40 p-8 md:p-14 flex flex-col gap-12">
             <header className="max-w-2xl space-y-4">
                 <p className="text-sm font-semibold tracking-[0.3em] uppercase text-muted-foreground">Tooling</p>
                 <h2 className="text-4xl md:text-4xl font-bold leading-tight">Frontier models deserve frontier tools</h2>
-                {/* <p className="text-lg text-muted-foreground">
-                    Pair interface styles with the work you are doing. Mix and match TUIs for deep prompting and IDEs for integrated coding support.
-                </p> */}
             </header>
 
             <div className="grid flex-1 grid-cols-1 gap-8 md:grid-cols-2">

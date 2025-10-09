@@ -33,7 +33,11 @@ const itemVariants: Variants = {
 export const examplesSlide: Slide = {
     id: "examples",
     displayName: "Show Examples",
-    notes: "Encourage providing concrete examples to guide the model.",
+    notes: `
+Here’s the first big tip I always share when working with LLMs: *show, don’t tell*. Just like it’s easier to understand a concept when there’s a picture instead of a long explanation, the same applies to large language models - especially when you're coding. If you try to describe everything with words - your architecture, your preferred styles, how you want something implemented - it can be exhausting and often unclear. But if you just show the model an actual example, it can pick up on the patterns way faster and much more reliably.
+
+These models are pattern recognition machines. So if there's a file in your project that does something in a style you like, just point the model to it. Even better, tag it directly in the context and tell the model what you want to extract. And if you’re working with something like DHIS2 and don’t have a solid example in your own codebase - steal one! Everything in the core apps is open source. Find a pattern you like from an official repo, plug it into the prompt, and let the agent work from there. You don’t need to reinvent the wheel - just help the AI see it.
+    `,
     content: (
         <div className="h-full relative overflow-hidden rounded-lg">
             <motion.div

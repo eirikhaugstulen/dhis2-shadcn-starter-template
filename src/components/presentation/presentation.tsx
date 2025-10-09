@@ -2,8 +2,10 @@ import React, { useEffect, useRef, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Sun, Moon, Play, Pause, ChevronLeft, ChevronRight, Grid, Maximize, Minimize } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
+import { Card, CardContent, CardDescription, CardTitle } from "@/components/ui/card";
 import { useNavigate, useLocation } from "react-router-dom";
+import { Response } from "../ai-elements/response";
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "../ui/dialog";
 
 export type Slide = {
     id: string;
@@ -281,10 +283,24 @@ export const SlideDeck = ({ slides, autoAdvanceMs = (0.2 * 60 * 1000) }: DeckPro
 
                     {/* Speaker notes overlay */}
                     {showNotes && !grid && (
-                        <div className="fixed z-50 inset-0 bg-black/70 text-white p-6 print:hidden">
-                            <div className="max-w-4xl mx-auto">
-                                <h4 className="text-xl font-semibold mb-2">Notes</h4>
-                                <p className="opacity-90 whitespace-pre-wrap">{slides[index]?.notes || "-"}</p>
+                        <div className={`fixed z-40 inset-0 p-6 print:hidden ${isFullscreen ? 'bg-black/70 text-white' : ''}`}>
+                            <div className="mx-auto max-w-4xl flex justify-center">
+                                {isFullscreen && (
+                                    <p className="text-white">Close full screen mode to see notes</p>
+                                )}
+                            <Dialog defaultOpen onOpenChange={() => setShowNotes(false)}>
+                                <DialogContent className="z-50">
+                                    <DialogHeader>
+                                        <DialogTitle>
+                                            Notes
+                                        </DialogTitle>
+                                        <DialogDescription>
+                                            These are AI-transcripts of the presentation. Errors may occur.
+                                        </DialogDescription>
+                                    </DialogHeader>
+                                    <Response>{slides[index]?.notes || "-"}</Response>
+                                </DialogContent>
+                            </Dialog>
                             </div>
                         </div>
                     )}

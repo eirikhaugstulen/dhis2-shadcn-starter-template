@@ -56,6 +56,9 @@ const titleVariants: Variants = {
 export const titleSlide: Slide = {
     id: "title",
     displayName: "Introduction",
+    notes: `
+Welcome to this presentation about how I use AI to assist with my software development job.
+    `,
     content: (
         <div className="h-full grid place-items-center relative text-center overflow-hidden rounded-lg">
             <motion.div

@@ -144,7 +144,11 @@ const itemVariants: Variants = {
 export const contextWindowSlide: Slide = {
     id: "context-window",
     displayName: "Context Window",
-    notes: "Explain what an LLM's context window is and its importance.",
+    notes: `
+Context is literally the model’s only window out of the locked room we talked about earlier - without it, it has no idea what’s going on in your codebase, your team, or your problem. Early on, context was super basic. You’d write a prompt at the top, and then fill the rest with chat history. If you wanted the AI to understand your code, you had to manually copy and paste whatever files or docs you thought were relevant. It was clunky and tedious, but it worked well enough to show promise.
+
+These days, context has become much more structured. Most tools automatically inject things like system instructions, tool definitions, rules and memories, relevant files, and the conversation history - basically, all the building blocks the AI needs to do useful work. But here’s the catch: there’s a sweet spot. If you give the model too little, it won’t understand the task. If you cram in too much, performance actually gets worse - it’s like telling a rambling story with no clear point. So crafting good context is all about balance: just enough for the AI to follow the thread, but not so much that it gets lost in the noise.
+    `,
     content: (
         <div className="h-full relative rounded-lg">
             <motion.div
