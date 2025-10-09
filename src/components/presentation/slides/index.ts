@@ -8,4 +8,5 @@ export { contextWindowSlide } from './context-window-slide';
 export { examplesSlide } from './examples-slide';
 export { taskBreakdownSlide } from './task-breakdown-slide';
 export { chatDemoSlide } from './chat-demo-slide';
+export { choosingToolsSlide } from './choosing-tools-slide';
 
